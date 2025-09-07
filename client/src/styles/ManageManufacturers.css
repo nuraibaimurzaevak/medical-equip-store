@@ -1,0 +1,65 @@
+/* ManageManufacturers.css */
+
+.manage-manufacturers-page {
+  background-color: #eaf6f6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.manage-manufacturers-page h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.manage-manufacturers-page form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.manage-manufacturers-page input {
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.manage-manufacturers-page button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #e0e0e0;
+  border: 1px solid #999;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.manage-manufacturers-page button:hover {
+  background-color: #d0d0d0;
+}
+
+.manage-manufacturers-page ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+.manage-manufacturers-page li {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.manage-manufacturers-page li button {
+  margin-right: 10px;
+}

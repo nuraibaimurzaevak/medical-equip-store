@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Редактирование профиля</title>
+  <link rel="stylesheet" href="profile-edit.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Редактирование профиля</h1>
+
+    <form action="/update_profile.php" method="post" class="profile-form">
+      <label for="username">Имя пользователя:</label>
+      <input type="text" id="username" name="username" value="testuser2" required>
+
+      <label for="email">Электронная почта:</label>
+      <input type="email" id="email" name="email" value="anastasiashevchenkobn@gmail.com" required>
+
+      <label for="role">Роль:</label>
+      <input type="text" id="role" name="role" value="Пользователь" readonly>
+
+      <div class="buttons">
+        <button type="submit" class="btn blue">Сохранить изменения</button>
+        <a href="/logout.php" class="btn gray">Выйти</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

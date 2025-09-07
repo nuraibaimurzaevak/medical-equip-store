@@ -1,0 +1,129 @@
+.catalog-page {
+  padding: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f9f7f2;
+  color: #2a2a2a;
+  min-height: 100vh;
+}
+
+/* Навигация категорий */
+.categories-nav {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.category-button {
+  flex: none;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  padding: 8px 16px;
+  cursor: pointer;
+  color: #4a4a4a;
+  border-bottom: 3px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.category-button:hover {
+  color: #000;
+}
+
+.category-button.active {
+  font-weight: 700;
+  border-color: #2a2a2a;
+  color: #2a2a2a;
+}
+
+/* Сетка товаров */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+/* Карточка товара */
+.product-card {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Изображение товара */
+.product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+/* Информация */
+.product-info {
+  margin-bottom: 40px; /* место под кнопку */
+}
+
+.product-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Кнопка "Добавить в корзину" */
+.add-to-cart-btn {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  background-color: #2a2a2a;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  font-weight: 700;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover .add-to-cart-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Кнопка избранного (сердечко) */
+.favorite-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #bbb;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  user-select: none;
+}
+
+.favorite-btn:hover {
+  color: #e63946;
+}
+
+.favorite-btn.favorited {
+  color: #e63946;
+}

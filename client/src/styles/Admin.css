@@ -1,0 +1,59 @@
+.admin-panel-container {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  padding: 40px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f5f2ee;
+  min-height: 80vh;
+}
+
+
+.admin-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  max-width: 300px;
+}
+
+.admin-menu-btn {
+  padding: 14px 24px;
+  font-size: 1.1rem;
+  background-color: #050300;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s ease;
+  border-radius: 0;
+  font-family: 'Georgia', serif;
+}
+
+.admin-menu-btn:hover {
+  background-color: #3a3a37;
+}
+
+.admin-report {
+  margin-top: 50px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+.admin-report-btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #b37f3f;
+  border: none;
+  color: #050300;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  transition: background-color 0.3s ease;
+  border-radius: 0;
+}
+
+.admin-report-btn:hover {
+  background-color: #946733;
+}

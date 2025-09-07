@@ -1,0 +1,194 @@
+.home-main {
+  display: flex;
+  height: calc(100vh - 60px); /* учитывая высоту navbar */
+  background-color: #f5f2ee; /* светлый, натуральный фон в стиле aesop */
+  color: #2a2a2a;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.home-image-container {
+  flex: 1;
+  max-height: 100vh; /* чтобы картинка не была выше экрана */
+  overflow: visible; /* не обрезать */
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.home-image {
+  max-width: 100%;
+  height: auto;
+  /* Убираем object-fit и фиксированные размеры */
+  /* Можно добавить тень или рамку, если хочешь */
+  display: block;
+}
+
+.home-main {
+  display: flex;
+  align-items: stretch; /* растягиваем блоки на всю высоту */
+  justify-content: center;
+  height: 60%;
+  background-color: #f5f2ee;
+  color: #2a2a2a;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.home-text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* выравниваем по вертикали */
+  padding: 40px;
+}
+
+
+.home-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.home-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #4a4a4a;
+}
+
+.home-button {
+  background-color: transparent;
+  border: 2px solid #2a2a2a;
+  color: #2a2a2a;
+  padding: 12px 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #2a2a2a;
+  color: #f5f2ee;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 768px) {
+  .home-main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .home-image-container,
+  .home-text-container {
+    flex: none;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+  }
+}
+.home-featured {
+  background-color: #ffffff; /* белый фон */
+  padding: 60px 40px;
+  color: #2a2a2a;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.home-featured-content {
+  display: flex;
+  flex-direction: row; /* 👈 Ставим текст справа, картинку слева */
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.encyclopedia {
+  padding: 80px 40px;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  color: #1a1a1a;
+}
+
+.encyclopedia-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+  letter-spacing: 0.02em;
+}
+
+.encyclopedia-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.encyclopedia-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #f9f7f2;
+  border: 1px solid #eee;
+  padding: 20px;
+  gap: 20px;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.encyclopedia-card:hover {
+  background-color: #f4f1eb;
+  transform: translateY(-4px);
+}
+
+.encyclopedia-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.encyclopedia-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.encyclopedia-text h3 {
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+
+.encyclopedia-text p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.encyclopedia-text a {
+  font-size: 0.9rem;
+  color: #2a2a2a;
+  text-decoration: underline;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.encyclopedia-footer {
+  margin-top: 40px;
+}
+
+.view-all-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #2a2a2a;
+}
+

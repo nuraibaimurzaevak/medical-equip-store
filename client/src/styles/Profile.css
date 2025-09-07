@@ -1,0 +1,118 @@
+/* profile.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6f2f1; /* очень светлый мятный */
+  margin: 0;
+  padding: 20px;
+}
+
+.profile-container {
+  max-width: 500px;
+  background-color: #fffafc; /* нежно-розоватый */
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(183, 214, 209, 0.5); /* мягкая тень мятного */
+}
+
+.profile-header {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #5d4a56; /* мягкий коричневато-фиолетовый */
+  text-align: center;
+}
+
+.profile-main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #c8e3dc; /* светло-мятная обводка */
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.profile-info {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #6a5d6a; /* мягкий серо-фиолетовый */
+}
+
+.profile-info p {
+  margin: 10px 0;
+}
+
+.profile-info strong {
+  color: #4b3f4b; /* чуть темнее */
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.btn {
+  flex: 1 1 120px;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #4b3f4b; /* текст темнее */
+  font-size: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(165, 188, 183, 0.4);
+}
+
+/* Цвета кнопок — нежно розовые и мятные пастельные */
+
+.btn.yellow {
+  background-color: #a8d5c1; /* нежно-розовый */
+}
+
+.btn.yellow:hover {
+  background-color: #8bc1ab;
+  color: #3a2c33;
+}
+
+.btn.blue {
+  background-color: #a8d5c1; /* мятный пастельный */
+}
+
+.btn.blue:hover {
+  background-color: #8bc1ab;
+  color: #2c3e34;
+}
+
+.btn.gray {
+  background-color: #f7d6d9; /* светло-сиренево-розоватый */
+}
+
+.btn.gray:hover {
+  background-color: #e9b9bc;
+  color: #3a2c3d;
+}
+
+/* Кнопка админа — нежный персиковый */
+
+.btn.admin {
+  background-color: #f7cfc4;
+  color: #5b3a29;
+  box-shadow: 0 2px 5px rgba(247, 207, 196, 0.5);
+}
+
+.btn.admin:hover {
+  background-color: #d9ae9a;
+  color: #3f2516;
+}

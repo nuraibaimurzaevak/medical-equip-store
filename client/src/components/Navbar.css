@@ -1,0 +1,57 @@
+/* Aesop-inspired navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #050300; /* теплый фон */
+  color: #2d2b2a;            /* теплый черный */
+  padding: 20px 40px;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  border-bottom: 1px solid #d6d4d2;
+}
+
+.navbar-logo {
+  font-size: 22px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: #fff
+}
+
+.navbar-logo:hover {
+  color: #4a4948;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-user {
+  color: #fff;
+  font-style: italic;
+  margin-right: 10px;
+}
+
+.navbar-btn {
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 8px 16px;
+  border-radius: 0;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-btn:hover {
+  background-color: #4a4948;
+  color: #fff;
+}
+
