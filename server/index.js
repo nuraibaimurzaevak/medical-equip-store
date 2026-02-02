@@ -16,8 +16,14 @@ const orderRoutes = require('./routes/orderRoutes');
 
 
 const app = express();
-const allowedOrigin = process.env.CLIENT_ORIGIN || 'http://localhost:3000';
-
+ const allowedOrigins = [
+            'https://veterinary-clinic-front.onrender.com',
+      'https://magical-belekoy-c5a3b3.netlify.app',
+      'http://localhost:3000',
+      'http://localhost:5173',
+      'http://127.0.0.1:3000',
+      'http://localhost:10000'
+    ];
 // ⚠️ Настройка CORS: разрешаем доступ с клиента + куки
 app.use(cors({
   origin: allowedOrigin,
